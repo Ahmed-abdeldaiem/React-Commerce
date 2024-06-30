@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.active{
+  @apply font-semibold transition-all duration-300 text-green-900 
+}
+
+.row{
+  @apply py-6 px-4  flex flex-wrap items-center
+}
+
+.item{
+  @apply rounded-lg  transition-all duration-500 cursor-pointer overflow-hidden ;
+ 
+}
+.item:hover{
+  box-shadow: 1px 1px 10px #4fa74f 
+}
+
+/* .slick-dots {
+ 
+} */
+
+.slick-dots li button::before{
+  content: '';
+ margin-top: 10px;
+  width: 15px;
+  height: 7px;
+  background-color: #4fa74f;
+  border-radius: 100vh;
+
+}
+
+.slick-dots li.slick-active button:before {
+  @apply text-green-400
+}
+
+
+input:focus{
+  @apply border-green-400 !important
+}

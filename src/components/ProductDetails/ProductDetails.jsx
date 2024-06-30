@@ -247,7 +247,7 @@ async function getWishItems(){
   
  {Loading ? <Loder/> :null}
 <div className="row">
-  <div className='lg:w-1/4'>
+  <div className='w-full md:w-1/4'>
   
 
   {productDetails?.images?.length>1 ?<Slider ref={slider => {sliderRef = slider;}}  {...settings2}>
@@ -275,7 +275,7 @@ async function getWishItems(){
 
 
   </div>
-  <div className='lg:w-3/4 px-5'>
+  <div className='w-full md:w-3/4 px-5'>
   <h3 className='font-semibold text-2xl my-1'>{productDetails.title}</h3>
   <p className='text-gray-900 font-normal my-3'>{productDetails.description}</p>
   <div className='flex justify-between my-3'>
